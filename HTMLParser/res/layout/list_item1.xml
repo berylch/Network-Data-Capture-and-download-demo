@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/body"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerVertical="true"
+    android:background="@drawable/home_list_item_selector"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@id/icon"
+        android:layout_width="@dimen/list_item_height_ext"
+        android:layout_height="@dimen/list_item_height_ext"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginTop="4.0dip"
+        android:background="@drawable/app_icon_list_bg"
+        android:cropToPadding="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_download" />
+
+    <ImageView
+        android:id="@id/icon_right_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/icon"
+        android:layout_alignRight="@id/icon"
+        android:layout_marginRight="-4.0dip"
+        android:cropToPadding="true"
+        android:src="@drawable/safelog" />
+
+    <TextView
+        android:id="@id/app_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5.0dip"
+        android:clickable="true"
+        android:drawablePadding="3.0dip"
+        android:drawableTop="@drawable/btn_icon_download"
+        android:gravity="center"
+        android:paddingBottom="11.0dip"
+        android:paddingLeft="6.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="4.0dip"
+        android:text="@string/xiazai"
+        android:textColor="@color/item_primary_title_text_color"
+        android:textSize="@dimen/action_text_size" />
+
+    <View
+        android:id="@id/pkg_item_divider"
+        android:layout_width="1.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginRight="-2.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_toLeftOf="@id/app_status"
+        android:background="@drawable/action_divider"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@id/newstitle"
+        style="@style/style_item_primary_title_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/icon"
+        android:layout_marginTop="4.0dip"
+        android:layout_toLeftOf="@id/app_status"
+        android:layout_toRightOf="@id/icon"
+        android:singleLine="true"
+        android:text="@string/app_list_item_ext_name" />
+
+    <LinearLayout
+        android:id="@+id/zuozhe_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/icon"
+        android:layout_toLeftOf="@id/app_status"
+        android:layout_toRightOf="@id/icon"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/zuozhe"
+            style="@style/style_item_summary_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:layout_weight="1"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@id/zuopinleibie"
+            style="@style/style_item_summary_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:layout_weight="1"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@id/icon"
+        android:background="#ffd4d5d6" />
+
+    <TextView
+        android:id="@id/newsMore"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:layout_marginLeft="8.0dip"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:padding="5.0dip"
+        android:singleLine="true"
+        android:textColor="#ff777777"
+        android:textSize="14.0dip" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ffd4d5d6" />
+
+</RelativeLayout>

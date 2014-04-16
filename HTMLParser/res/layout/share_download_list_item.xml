@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@id/pkg_item_layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@drawable/share_home_list_item_selector"
+        android:clickable="true"
+        android:focusable="true" >
+
+        <ImageView
+            android:id="@id/app_icon"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:background="@drawable/app_icon_list_bg"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/btn_app_status"
+            android:layout_width="@dimen/action_button_width"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/home_list_item_right_btn"
+            android:clickable="true"
+            android:drawableTop="@drawable/btn_icon_download"
+            android:focusable="true"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingTop="10.0dip"
+            android:textColor="@color/item_primary_title_text_color"
+            android:textSize="@dimen/action_text_size" />
+
+        <ImageView
+            android:id="@id/pkg_item_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toLeftOf="@id/btn_app_status"
+            android:src="@drawable/arrow_downlad"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/app_name"
+            style="@style/style_item_primary_title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_toLeftOf="@id/pkg_item_arrow"
+            android:layout_toRightOf="@id/app_icon"
+            android:singleLine="true"
+            android:text="app_name " />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/app_name"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8.0dip"
+            android:layout_toLeftOf="@id/pkg_item_arrow"
+            android:layout_toRightOf="@id/app_icon"
+            android:gravity="center" >
+
+            <ProgressBar
+                android:id="@id/download_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="8.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="8.0dip"
+                android:max="100"
+                android:progressDrawable="@drawable/nb_receive_pb" />
+
+            <TextView
+                android:id="@id/complete_download_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/download_progress"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8.0dip"
+                android:text=""
+                android:textColor="@color/item_summary_title_text_color"
+                android:textSize="12.0dip" />
+
+            <TextView
+                android:id="@id/progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/download_progress"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/item_summary_title_text_color"
+                android:textSize="12.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/layout_popup_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pkg_item_layout_top"
+        android:layout_gravity="center"
+        android:background="@drawable/download_menu_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="3.0" >
+
+        <TextView
+            android:id="@id/btn_share_apk"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2.0dip"
+            android:layout_weight="1.0"
+            android:drawablePadding="2.0dip"
+            android:drawableTop="@drawable/menu_item_share"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/btn_share"
+            android:textColor="@color/item_summary_title_text_color"
+            android:textSize="@dimen/bottom_text_size" />
+
+        <TextView
+            android:id="@id/btn_redownload_apk"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2.0dip"
+            android:layout_weight="1.0"
+            android:drawablePadding="2.0dip"
+            android:drawableTop="@drawable/menu_item_redownload"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/reDownload"
+            android:textColor="@color/item_summary_title_text_color"
+            android:textSize="@dimen/bottom_text_size" />
+
+        <TextView
+            android:id="@id/btn_delete_apk"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2.0dip"
+            android:layout_weight="1.0"
+            android:drawablePadding="2.0dip"
+            android:drawableTop="@drawable/menu_item_uninstall"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/deleteDownload"
+            android:textColor="@color/item_summary_title_text_color"
+            android:textSize="@dimen/bottom_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

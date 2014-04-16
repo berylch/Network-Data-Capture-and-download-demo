@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slidingdrawerLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="bottom" >
+
+    <cn.waps.extend.SlideWallDrawer
+        android:id="@+id/slidingDrawer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:content="@+id/drawerContent"
+        android:handle="@+id/drawerHandle"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@id/drawerContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@id/drawerHandle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/handle_up" />
+    </cn.waps.extend.SlideWallDrawer>
+
+</LinearLayout>

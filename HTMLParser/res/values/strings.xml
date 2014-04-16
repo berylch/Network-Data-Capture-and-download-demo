@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">鱼儿免费小说下载器</string>
+    <string name="btn_share">分享</string>
+    <string name="action_settings">设置</string>
+    <string name="net_error">请检测网络</string>
+    <string name="action_about">关于</string>
+    <string name="action_exit">退出</string>
+    <string name="action_updata">抓取</string>
+    <string name="on_loading">正在加载中...</string>
+    <string name="more">加载更多</string>
+    <string name="zaianyicituichu">再按一次返回键关闭程序</string>
+    <string name="no_more">没有了</string>
+    <string name="next_page">下一页</string>
+    <string name="end_page">末页</string>
+    <string name="zuozhe_zhuye">作者主页</string>
+    <string name="xiazai">下载</string>
+    <string name="downloader">保存网页</string>
+    <string name="net_return">网络出错,稍后请重试</string>
+    <string name="sousuo">搜索</string>
+    <string name="jiazaigengduo">加载更多</string>
+    <string name="shezhi">设置</string>
+    <string name="xiazailiebiao">下载列表</string>
+    <string name="zhengzaichulizhong">加速处理中...</string>
+    <string name="jingxi">惊喜</string>
+    <string name="zanting">暂停</string>
+    <string name="jixu">继续</string>
+    <string name="open">打开</string>
+    <string name="zantingzhong">暂停中</string>
+    <string name="dengdaizhong">等待中</string>
+    <string name="tuijianliebiao">推荐列表</string>
+    <string name="searchHint">输入关键字</string>
+    <string name="zhichiyixia">支持作者</string>
+    <string name="fankuiwenti">反馈问题</string>
+     <string name="fankuixinxi">大伙可以反馈一些较常见的小说下载网址，以便作者实现去支持下载此网站的小说，在此先谢谢各位了。</string>
+    <string name="Author">作者:陆晓明  \n QQ:332324956</string>
+    <string name="tongzhi">温馨提示：\n 本软件为方便大家搜索和下载小说而开发，满足小说爱好者的便捷操作。为了作者开发更完善的版本，烦请大家点击下方的广告支持下作者。正所谓：送人玫瑰，手有餘香。\n
+         作者QQ:332324956</string>
+          <string name="jiancewangluo">没网络，请检测网络！</string>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="inline_preferences">In-line preferences</string>
+    <string name="title_toggle_preference">Toggle preference</string>
+    <string name="summary_toggle_preference">This is a toggle button</string>
+    <string name="dialog_based_preferences">Dialog-based preferences</string>
+    <string name="title_edittext_preference">Edit text preference</string>
+    <string name="dialog_title_edittext_preference">Enter your favorite animal</string>
+    <string name="summary_edittext_preference">An example that uses an edit text dialog</string>
+    <string name="title_list_preference">List preference</string>
+    <string name="summary_list_preference">An example that uses a list dialog</string>
+    <string name="preference_attributes">Preference attributes</string>
+    <string name="title_parent_preference">Parent toggle</string>
+    <string name="summary_parent_preference">This is visually a parent</string>
+    <string name="title_child_preference">Child toggle</string>
+    <string name="summary_child_preference">This is visually a child</string>
+    <string name="title_next_screen_toggle_preference">Toggle preference</string>
+    <string name="summary_next_screen_toggle_preference">Preference that is on the next screen but same hierarchy</string>
+    <string name="title_intent_preference">Intent preference</string>
+    <string name="summary_intent_preference">Launches an Activity from an Intent</string>
+    <string name="title_screen_preference">Screen preference</string>
+    <string name="summary_screen_preference">Shows another screen of preferences</string>
+    <string name="dialog_title_list_preference">Choose one</string>
+    <string name="launch_preferences">Launch preferences</string>
+    <string name="title_activity_my_main">下载列表</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="md__drawerOpenIndicatorDesc">Close drawer</string>
+    <string name="sample_content">Sample of dragging the content.\nThe menu consists of a ListView, for which the
+        active position is saved through configuration changes.\nAdditionally, if the menu is open, a back press will
+        close it.</string>
+    <string name="sample_window">Sample of dragging the entire window.\nThe menu is a simple ScrollView, with a click
+        listener set on each item.\nThe drawer will animate slightly open, to make it more discoverable.\nAdditionally,
+        if the menu is open, a back press will close it.</string>
+    <string name="sample_listactivity">Sample of how to use the drawer with ListActivity.\nWhen running on ICS or
+        greater, the ActionBar up button will blink until clicked by the user. This is done to make the menu more
+        discoverable.\nAdditionally, if the menu is open, a back press will close it.</string>
+    <string name="new_version_size">新版大小 :</string>
+    <string name="sample_rightmenu">This sample shows how to position the menu to the right of the content.\nRun on
+        an API14+ device to see how it interacts with the overflow button.</string>
+    <string name="sample_topmenu">This sample shows how to position the menu above the content.</string>
+    <string name="sample_bottommenu">This sample shows how to position the menu below the content.</string>
+    <string name="sample_layout">This sample shows how to use the drawer in a layout file.
+        \nThe top drawer is used in this sample.</string>
+    <string name="reDownload">重新下载</string>
+    <string name="deleteDownload">删除</string>
+    <string name="action_ignore">忽略更新</string>
+    <string name="action_uninstall">卸载</string>
+    <string name="sample_static">This sample shows how to attach a drawer that is always visible.</string>
+    <string name="md__drawerClosedIndicatorDesc">Open drawer</string>
+    <string name="move_sd_card_app">移至SD卡</string>
+    <string name="search">搜索</string>
+    <string name="msg_detail">详情</string>
+        <string name="queding">确定</string>
+    <string name="quxiao">取消</string>
+    <string name="app_list_item_ext_name">name</string>
+    <string name="search_progress">正在搜索...</string>
+    <string name="search_hint">输入搜索内容</string>
+    <string name="Downloading">努力加载中...</string>
+
+</resources>

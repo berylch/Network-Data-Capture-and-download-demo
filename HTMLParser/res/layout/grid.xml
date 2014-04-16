@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/grid_tv"
+        style="@style/btn_dialog_1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/btn_dialog_neg"
+        android:gravity="center_horizontal|center_vertical"
+        android:singleLine="true"
+        android:text="@string/fankuiwenti"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/group_header_text_color" />
+
+</LinearLayout>
